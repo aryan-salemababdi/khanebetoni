@@ -29,13 +29,13 @@ const Banner: NextPage<LandingProps> = ({ image }) => {
   return (
     <>
       <div style={mystyle}>
-        <Typography fontWeight="bold" variant="h4" mt={1}>
+        <Typography fontWeight="bold" variant="h4" textAlign="center" mt={1} mx={1}>
           خانه بتنی
         </Typography>
-        <Typography fontWeight="bold" variant="h4" mt={1}>
+        <Typography fontWeight="bold" variant="h4" textAlign="center" mt={1} mx={1}>
           ما مواد ساختمانی با کیفیت بالا ارائه می‌دهیم
         </Typography>
-        <Typography fontWeight="bold" variant="h6" mt={1}>
+        <Typography fontWeight="bold" variant="h6" textAlign="center" mt={1} mx={1}>
         با افتخار، پیشرو در ارائه محصولات بتن و آرمه با کیفیت برای ساخت آینده بهتر و پایدار
         </Typography>
         <Button
