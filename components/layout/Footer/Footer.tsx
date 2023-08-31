@@ -14,6 +14,7 @@ const Footer = () => {
           component="div" 
           sx={{ flexGrow: 1 }}
           textAlign="center"
+          color="black"
           >
             &copy; 2023-Now KhaneBetoni | Aryan Salemabadi | 09215531809
           </Typography>
