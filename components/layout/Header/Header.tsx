@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -66,7 +66,6 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  
 
   return (
     <>
@@ -74,6 +73,10 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
         <AppBar
           sx={{
             background: scroll > 30 || currentPath !== "/" ? "#fff" : "none",
+            boxShadow:
+              scroll > 30 || currentPath !== "/"
+                ? "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)"
+                : "none",
           }}
         >
           <Grid container justifyContent="space-between" alignItems="center">
@@ -83,7 +86,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                 alt="logo"
                 width={70}
                 height={70}
-                style={{borderRadius:"50%"}}
+                style={{ borderRadius: "50%" }}
               />
             </Grid>
             <Grid item>
@@ -169,7 +172,15 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         href="/"
                         style={{ textDecoration: "none", color: "#ffffff" }}
                       >
-                        <Typography fontWeight="bold" variant="h6" color="black">
+                        <Typography
+                          fontWeight="bold"
+                          variant="h6"
+                          color={
+                            scroll > 30 || currentPath !== "/"
+                              ? "black"
+                              : "white"
+                          }
+                        >
                           تماس با ما
                         </Typography>
                       </Link>
@@ -184,7 +195,15 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         href="/"
                         style={{ textDecoration: "none", color: "#ffffff" }}
                       >
-                        <Typography fontWeight="bold" variant="h6" color="black">
+                        <Typography
+                          fontWeight="bold"
+                          variant="h6"
+                          color={
+                            scroll > 30 || currentPath !== "/"
+                              ? "black"
+                              : "white"
+                          }
+                        >
                           درباره ما
                         </Typography>
                       </Link>
@@ -196,11 +215,19 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                   >
                     <ListItem>
                       <Link
-                        href="/menu"
+                        href="/project"
                         style={{ textDecoration: "none", color: "#ffffff" }}
                       >
-                        <Typography fontWeight="bold" variant="h6" color="black">
-                          پروژه
+                        <Typography
+                          fontWeight="bold"
+                          variant="h6"
+                          color={
+                            scroll > 30 || currentPath !== "/"
+                              ? "black"
+                              : "white"
+                          }
+                        >
+                        پروژه ها
                         </Typography>
                       </Link>
                     </ListItem>
@@ -218,7 +245,15 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         href="/"
                         style={{ textDecoration: "none", color: "#ffffff" }}
                       >
-                        <Typography fontWeight="bold" variant="h6" color="black">
+                        <Typography
+                          fontWeight="bold"
+                          variant="h6"
+                          color={
+                            scroll > 30 || currentPath !== "/"
+                              ? "black"
+                              : "white"
+                          }
+                        >
                           خانه
                         </Typography>
                       </Link>
@@ -227,8 +262,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                   <Grid
                     item
                     sx={{ display: { md: "block", sm: "none", xs: "none" } }}
-                  >
-                  </Grid>
+                  ></Grid>
                 </Grid>
               </List>
             </Grid>
