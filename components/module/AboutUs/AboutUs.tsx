@@ -48,7 +48,7 @@ const AboutUs = () => {
               راه‌حل‌های سازنده و پایدار برای صنعت ساخت و ساز متعهدیم. هدف ما
               ارتقاء کیفیت ساخت‌وساز و ایجاد ارتباطی قوی با مشتریان است تا با
               همکاری و همراهی، پروژه‌هایی استثنایی و با ارزش افزوده بالا را به
-              اتمام برسانیم.
+              اتمام برسانیم
             </Typography>
             <Button
               variant="contained"
@@ -77,7 +77,7 @@ const AboutUs = () => {
             justifyContent="center"
           >
             <Image
-              src="/images/images.png"
+              src="/images/aboutus.png"
               alt="aboutus"
               layout="responsive"
               width={400}
