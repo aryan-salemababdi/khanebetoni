@@ -22,6 +22,9 @@ const LandingPage = () => {
       <AboutUs />
       <HowToOrder />
       <Guide /> */}
+      <h2>
+        landing page
+      </h2>
     </>
   );
 };
