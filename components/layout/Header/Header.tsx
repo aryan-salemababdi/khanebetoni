@@ -103,7 +103,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         aria-haspopup="true"
                         aria-expanded={open ? "true" : undefined}
                         onClick={handleClick}
-                        color="inherit"
+                        sx={{color:scroll > 30 || currentPath !== "/" ? "black" : "#fff"}}
                       >
                         <MenuIcon />
                       </Button>

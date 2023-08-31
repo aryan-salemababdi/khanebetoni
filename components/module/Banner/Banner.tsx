@@ -36,7 +36,7 @@ const Banner: NextPage<LandingProps> = ({ image }) => {
           ما مواد ساختمانی با کیفیت بالا ارائه می‌دهیم
         </Typography>
         <Typography fontWeight="bold" variant="h6" textAlign="center" mt={1} mx={1}>
-        با افتخار، پیشرو در ارائه محصولات بتن و آرمه با کیفیت برای ساخت آینده بهتر و پایدار
+        با افتخار، پیشرو در ارائه محصولات بتن آرمه با کیفیت برای ساخت آینده بهتر و پایدار
         </Typography>
         <Button
           variant="contained"
