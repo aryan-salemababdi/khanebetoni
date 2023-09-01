@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Projects = async () => {
-  const res = await fetch("http://localhost:4003/projects", {
+  const res = await fetch("https://khanebetoni-api.vercel.app/projects", {
     cache: "force-cache",
   });
 
