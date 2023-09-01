@@ -1,22 +1,31 @@
+"use client";
 import React from "react";
-import {
-  Typography,
-  Box,
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Button,
-} from "@mui/material";
+import { useRouter } from "next/navigation";
+import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { NextPage } from "next";
 
-const Projects = async () => {
-  const res = await fetch("https://khanebetoni-api.vercel.app/projects", {
-    cache: "force-cache",
-  });
+interface IOurWorks {
+  data: {
+    id: number;
+    title: string;
+    master: string;
+    startTime: string;
+    endTime: string;
+    featuredImage: string;
+    allImages: string[];
+    area: number;
+    roof: number;
+    typeRoof: string;
+    sidewaysBarSystem: string;
+    weightArmature1: number | null;
+    weightArmature2: number | null;
+  }[];
+}
 
-  const data = await res.json();
+const OurWorks: NextPage<IOurWorks> = ({ data }) => {
+  const router = useRouter();
 
   return (
     <Box m="100px 0px">
@@ -50,7 +59,7 @@ const Projects = async () => {
       >
         {data.slice(0, 3).map((item: any) => (
           <Box m="0px 10px" key={item.id}>
-            <Link href={`/project/${item.title}`}>
+            <Button onClick={()=> router.push(`/projects/${item.title}`)}>
               <Image
                 src={item.featuredImage}
                 alt={item.title}
@@ -59,12 +68,24 @@ const Projects = async () => {
                 layout="responsive"
                 style={{ borderRadius: "10px" }}
               />
-            </Link>
+            </Button>
           </Box>
         ))}
+      </Box>
+      <Box display="flex" justifyContent="center">
+        <Button
+          variant="outlined"
+          color="warning"
+          onClick={() => router.push("/projects")}
+          sx={{margin:"20px 0px"}}
+        >
+          <Typography fontWeight="bold" variant="h6" textAlign="right">
+            پروژه ها
+          </Typography>
+        </Button>
       </Box>
     </Box>
   );
 };
 
-export default Projects;
+export default OurWorks;

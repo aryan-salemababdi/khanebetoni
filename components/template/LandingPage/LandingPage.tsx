@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import Banner from "@/components/module/Banner/Banner";
 import AboutUs from "@/components/module/AboutUs/AboutUs";
-import Projects from "@/components/module/Projects/Projects";
+import OurWork from "@/components/module/Projects/OurWork";
 
 const LandingPage = () => {
 
@@ -13,7 +13,7 @@ const LandingPage = () => {
       </Box>
       <Box m="20px 0px">
         <AboutUs />
-        <Projects />
+        <OurWork />
       </Box>
     </>
   );
