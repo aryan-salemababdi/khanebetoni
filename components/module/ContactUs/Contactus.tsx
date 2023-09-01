@@ -9,7 +9,7 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 const Contactus = () => {
   const mystyle = {
     backgroundImage: `url(images/bg-contactus.jpg)`,
-    margin: "10px 0px",
+    margin: "55px 0px",
     height: "50vh",
     width: "100vw",
     backgroundPosition: "center",
