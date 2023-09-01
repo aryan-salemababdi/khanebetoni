@@ -53,10 +53,10 @@ const Contactus = () => {
           </div>
           <StayPrimaryPortraitIcon sx={{ fontSize: "50px" }} />
         </Box>
-        <Link href="tel:02177487165" className="contact-link">
+        <Box className="contact-link">
           <div className="contact-tooltip-telephone">02177487165</div>
           <LocalPhoneIcon sx={{ fontSize: "50px" }} />
-        </Link>
+        </Box>
       </Box>
     </Box>
   );
