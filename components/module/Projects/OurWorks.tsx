@@ -59,7 +59,7 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
       >
         {data.slice(0, 3).map((item: any) => (
           <Box m="0px 10px" key={item.id}>
-            <Button onClick={()=> router.push(`/projects/${item.title}`)}>
+            <Button onClick={() => router.push(`/projects/${item.title}`)}>
               <Image
                 src={item.featuredImage}
                 alt={item.title}
@@ -77,7 +77,7 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
           variant="outlined"
           color="warning"
           onClick={() => router.push("/projects")}
-          sx={{margin:"20px 0px"}}
+          sx={{ margin: "20px 0px" }}
         >
           <Typography fontWeight="bold" variant="h6" textAlign="right">
             پروژه ها
