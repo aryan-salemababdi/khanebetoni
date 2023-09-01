@@ -1,3 +1,4 @@
+"use client";
 import { Container, Grid, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import { useRouter as useNextRouter } from "next/navigation";
@@ -26,11 +27,11 @@ const AboutUs = () => {
             <Typography fontWeight="bold" variant="h3">
               پروژه های ساختمانی خود را به ما پسپارید
             </Typography>
-            <Typography 
-             fontWeight="bold"
-             variant="body1"
-             sx={{margin:"10px 0px"}}
-             >
+            <Typography
+              fontWeight="bold"
+              variant="body1"
+              sx={{ margin: "10px 0px" }}
+            >
               بیش از پنج سال سابقه در صنعت بتن آرمه
             </Typography>
             <Typography
@@ -49,6 +50,17 @@ const AboutUs = () => {
               ارتقاء کیفیت ساخت‌وساز و ایجاد ارتباطی قوی با مشتریان است تا با
               همکاری و همراهی، پروژه‌هایی استثنایی و با ارزش افزوده بالا را به
               اتمام برسانیم
+            </Typography>
+            <Typography
+              fontWeight="bold"
+              variant="body2"
+              sx={{ margin: "10px 0px" }}
+              color="#686868"
+            >
+              مجموعه خانه بتنی یک مجموعه متشکل از مهندسان عمران و فارغ التحصیلان
+              دانشگاه های برتر ایران است، که خدمت آن اجرای حرفه ای و مهندسی سازه
+              های بتن آرمه با رویکرد تسلط بر طراحی و بهینه سازی سازه های بتن
+              آرمه می باشد
             </Typography>
             <Button
               variant="contained"
