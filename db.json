@@ -1,0 +1,77 @@
+{
+    "projects":[
+        {
+        "id" : 1,
+        "title" : "پروژه اجرا سازه بتن آرمه خیابان قانع عبادی",
+        "master" : "بخش خصوصی",
+        "startTime": "تیر ماه 1402",
+        "endTime": "در حال اجرا",
+        "featuredImage" : "/images/project/ghane_ebadi/1.jpg",
+        "allImages": [
+            "/images/project/ghane_ebadi/2.jpg",
+            "/images/project/ghane_ebadi/3.jpg",
+            "/images/project/ghane_ebadi/4.jpg",
+            "/images/project/ghane_ebadi/5.jpg",
+            "/images/project/ghane_ebadi/6.jpg",
+            "/images/project/ghane_ebadi/7.jpg"
+          ],
+          "area" : 1050,
+          "roof": 6,
+          "typeRoof" : "تیرچه و دال بتنی",
+          "sidewaysBarSystem" : "قاب خمشی متوسط در دو جهت",
+          "weightArmature1":null,
+          "weightArmature2" : 36
+
+    },
+        {
+        "id" : 2,
+        "title" : "پروژه اجرا سازه بتن آرمه میدان 8",
+        "master" : "بخش خصوصی",
+        "startTime": "آذر ماه 1400",
+        "endTime": "چهار ماه و بیست روز",
+        "featuredImage" : "/images/project/meydan8/1.jpg",
+        "allImages": [
+            "/images/project/meydan8/2.jpg",
+            "/images/project/meydan8/3.jpg",
+            "/images/project/meydan8/4.jpg",
+            "/images/project/meydan8/5.jpg",
+            "/images/project/meydan8/6.jpg",
+            "/images/project/meydan8/7.jpg",
+            "/images/project/meydan8/8.jpg",
+            "/images/project/meydan8/9.jpg"
+          ],
+          "area" : 1500,
+          "roof": 7,
+          "typeRoof" : "تیردال",
+          "sidewaysBarSystem" : "قاب خمشی متوسط در دو جهت",
+          "weightArmature1":72,
+          "weightArmature2" : 63
+
+    },
+        {
+        "id" : 3,
+        "title" : "پروژه اجرا سازه بتن آرمه خیابان مدائن",
+        "master" : "بخش خصوصی",
+        "startTime": "مرداد ماه 1399",
+        "endTime": "سه ماه و ده روز",
+        "featuredImage" : "/images/project/madayin/1.jpg",
+        "allImages": [
+            "/images/project/madayin/2.jpg",
+            "/images/project/madayin/3.jpg",
+            "/images/project/madayin/4.jpg",
+            "/images/project/madayin/5.jpg",
+            "/images/project/madayin/6.jpg",
+            "/images/project/madayin/7.jpg",
+            "/images/project/madayin/8.jpg",
+            "/images/project/madayin/9.jpg"
+          ],
+          "area" : 705,
+          "roof": 5,
+          "typeRoof" : "تیردال",
+          "sidewaysBarSystem" : "قاب خمشی متوسط به همراه دیوار برشی ویژه در دو جهت",
+          "weightArmature1":null,
+          "weightArmature2" : null
+
+    }
+ ]
+}

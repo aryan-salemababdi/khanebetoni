@@ -1,18 +1,31 @@
-import { NextPage } from "next";
+"use client"
+import {useState, useEffect } from "react";
 import { Typography, Button, Divider } from "@mui/material";
 import { useRouter as useNextRouter } from "next/navigation";
 
-interface LandingProps {
-  image: string;
-}
-
 type Router = ReturnType<typeof useNextRouter>;
 
-const Banner: NextPage<LandingProps> = ({ image }) => {
+const Banner = () => {
   const router: Router = useNextRouter();
 
+  const [backgroundImageIndex, setBackgroundImageIndex] = useState<number>(0);
+
+  const arrayImage = [1, 2];
+
+  function updateBackgroundImage() {
+    backgroundImageIndex > 0
+      ? setBackgroundImageIndex(0)
+      : setBackgroundImageIndex(backgroundImageIndex + 1);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(updateBackgroundImage, 4000);
+    return () => clearInterval(interval);
+  });
+
+
   const mystyle = {
-    backgroundImage: `url(${image})`,
+    backgroundImage: `url(images/image${arrayImage[backgroundImageIndex]}.png)`,
     margin: "0px",
     height: "100vh",
     width: "100vw",
