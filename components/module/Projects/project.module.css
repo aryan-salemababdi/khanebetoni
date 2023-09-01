@@ -1,0 +1,21 @@
+.popbox{
+    border: 1px solid #e7e7e7;
+    margin: 30px;
+    border-radius: 15px;
+    padding:20px;
+    cursor: grab;
+}
+.popboxgrabbing {
+    border: 1px solid #e7e7e7;
+    margin: 30px;
+    border-radius: 15px;
+    padding:20px;
+    cursor: grabbing;
+}
+.Popularbrands{
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
