@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <Box>
-      <AppBar position="static" sx={{ background: "#fff", boxShadow: "none" }}>
+      <AppBar position="static" sx={{ background: "#e6e6e6", boxShadow: "none" }}>
         <Toolbar>
           <Typography 
           variant="h6"
@@ -16,7 +16,7 @@ const Footer = () => {
           textAlign="center"
           color="black"
           >
-            &copy; 2023-Now KhaneBetoni | Aryan Salemabadi | 09215531809
+            &copy; 2020-Now KhaneBetoni
           </Typography>
         </Toolbar>
       </AppBar>
