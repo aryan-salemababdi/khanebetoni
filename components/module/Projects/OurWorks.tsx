@@ -57,7 +57,7 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
       >
         {data.slice(0, 3).map((item: any) => (
           <Box m="0px 10px" key={item.id}>
-            <Button onClick={() => router.push(`/projects/${item.title}`)}>
+            <Button onClick={() => router.push(`/project/${item.id}`)}>
               <Image
                 src={item.featuredImage}
                 alt={item.title}
