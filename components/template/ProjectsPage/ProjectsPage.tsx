@@ -32,7 +32,7 @@ const ProjectsPage: NextPage<IProject> = ({ data }) => {
   const router = useRouter();
 
   return (
-    <div style={{ height: "100vh", margin: "100px 0px" }}>
+    <div style={{ height: "100%", margin: "100px 0px" }}>
       <Grid
         container
         display="grid"
