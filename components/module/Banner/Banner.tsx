@@ -97,7 +97,7 @@ const Banner = () => {
             color="warning"
             sx={{ margin: "10px 10px" }}
             onClick={() => {
-              scroller(2381);
+              scroller(2988);
             }}
           >
             <Typography
@@ -131,7 +131,7 @@ const Banner = () => {
             color="warning"
             sx={{ margin: "10px 10px" }}
             onClick={() => {
-              scroller(3288);
+              scroller(4546);
             }}
           >
             <Typography
@@ -158,6 +158,23 @@ const Banner = () => {
               color="white"
             >
               مراحل اجرا
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(2040);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              مزایای همکاری
             </Typography>
           </Button>
         </Box>
