@@ -129,7 +129,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              سیستم باربر جانبی : {data.sidewaysBarSystem} -
+              سیستم باربر جانبی : {data.sidewaysBarSystem} 
             </Typography>
             {data.weightArmature1 !== null && (
               <Typography
