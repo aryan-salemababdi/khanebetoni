@@ -3,6 +3,7 @@ import Banner from "@/components/module/Banner/Banner";
 import AboutUs from "@/components/module/AboutUs/AboutUs";
 import OurWork from "@/components/module/Projects/OurWork";
 import Contactus from "@/components/module/ContactUs/Contactus";
+import LevelStart from "@/components/module/LevelStart/LevelStart";
 
 const LandingPage = () => {
 
@@ -14,6 +15,7 @@ const LandingPage = () => {
       </Box>
       <Box m="20px 0px">
         <AboutUs />
+        <LevelStart />
         <OurWork />
         <Contactus />
       </Box>

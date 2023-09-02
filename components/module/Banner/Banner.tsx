@@ -33,15 +33,15 @@ const Banner = () => {
     };
   }, []);
 
-  const scroller = (value:number) => {
+  const scroller = (value: number) => {
     window.scrollTo({
-        top: value,
-        behavior: "smooth",
-    })
-}
+      top: value,
+      behavior: "smooth",
+    });
+  };
 
   console.log(scroll);
-  
+
   const mystyle = {
     backgroundImage: `url(images/image${arrayImage[backgroundImageIndex]}.png)`,
     margin: "0px",
@@ -57,7 +57,6 @@ const Banner = () => {
     alignItems: "center" as const,
     color: "#fff",
   };
-  
 
   return (
     <>
@@ -97,8 +96,8 @@ const Banner = () => {
             variant="contained"
             color="warning"
             sx={{ margin: "10px 10px" }}
-            onClick={()=>{
-              scroller(1600)
+            onClick={() => {
+              scroller(2381);
             }}
           >
             <Typography
@@ -114,8 +113,8 @@ const Banner = () => {
             variant="contained"
             color="warning"
             sx={{ margin: "10px 10px" }}
-            onClick={()=>{
-              scroller(650)
+            onClick={() => {
+              scroller(650);
             }}
           >
             <Typography
@@ -131,8 +130,8 @@ const Banner = () => {
             variant="contained"
             color="warning"
             sx={{ margin: "10px 10px" }}
-            onClick={()=>{
-              scroller(2716)
+            onClick={() => {
+              scroller(3288);
             }}
           >
             <Typography
@@ -142,6 +141,23 @@ const Banner = () => {
               color="white"
             >
               ارتباط با ما
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(1500);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              مراحل اجرا
             </Typography>
           </Button>
         </Box>
