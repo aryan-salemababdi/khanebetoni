@@ -3,7 +3,6 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { Typography, Box, Button } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
 import { NextPage } from "next";
 
 interface IOurWorks {
@@ -12,7 +11,6 @@ interface IOurWorks {
     title: string;
     master: string;
     startTime: string;
-    endTime: string;
     featuredImage: string;
     allImages: string[];
     area: number;
@@ -76,7 +74,7 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
         <Button
           variant="outlined"
           color="warning"
-          onClick={() => router.push("/projects")}
+          onClick={() => router.push("/project")}
           sx={{ margin: "20px 0px" }}
         >
           <Typography fontWeight="bold" variant="h6" textAlign="right">

@@ -9,29 +9,8 @@ const Banner = () => {
   const router: Router = useNextRouter();
 
   const [backgroundImageIndex, setBackgroundImageIndex] = useState<number>(0);
-  const [scroll, setScroll] = useState<number>(0);
-
+  
   const arrayImage = [1, 2];
-
-  function updateBackgroundImage() {
-    backgroundImageIndex > 0
-      ? setBackgroundImageIndex(0)
-      : setBackgroundImageIndex(backgroundImageIndex + 1);
-  }
-
-  useEffect(() => {
-    const interval = setInterval(updateBackgroundImage, 4000);
-    return () => clearInterval(interval);
-  });
-  useEffect(() => {
-    const handleScroll = () => {
-      setScroll(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const scroller = (value: number) => {
     window.scrollTo({
@@ -39,8 +18,6 @@ const Banner = () => {
       behavior: "smooth",
     });
   };
-
-  console.log(scroll);
 
   const mystyle = {
     backgroundImage: `url(images/image${arrayImage[backgroundImageIndex]}.png)`,
