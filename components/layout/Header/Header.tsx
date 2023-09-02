@@ -127,7 +127,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                           </MenuItem>
                         </Link>
                         <Link
-                          href="/menu"
+                          href="/project"
                           style={{ textDecoration: "none", color: "black" }}
                         >
                           <MenuItem onClick={handleClose}>
