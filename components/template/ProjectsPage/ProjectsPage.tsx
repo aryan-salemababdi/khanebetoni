@@ -79,7 +79,7 @@ const ProjectsPage: NextPage<IProject> = ({ data }) => {
                 <Button
                   size="small"
                   onClick={() => {
-                    router.push(`/menu/${item.id}`);
+                    router.push(`/project/${item.id}`);
                   }}
                 >
                   <Typography
