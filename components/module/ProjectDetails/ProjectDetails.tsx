@@ -83,7 +83,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              کارفرما : {data.master} -
+              کارفرما : {data.master} 
             </Typography>
             <Typography
               fontWeight="bold"
@@ -97,7 +97,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              تاریخ شروع پروژه : {data.startTime} -
+              تاریخ شروع پروژه : {data.startTime} 
             </Typography>
             <Typography
               fontWeight="bold"
@@ -105,7 +105,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              مساحت : {data.area} متر مربع -
+              مساحت : {data.area} متر مربع 
             </Typography>
             <Typography
               fontWeight="bold"
@@ -113,7 +113,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              تعداد سقف : {data.roof} سقف -
+              تعداد سقف : {data.roof} سقف 
             </Typography>
             <Typography
               fontWeight="bold"
@@ -121,7 +121,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              نوع سقف : {data.typeRoof} -
+              نوع سقف : {data.typeRoof} 
             </Typography>
             <Typography
               fontWeight="bold"
@@ -139,7 +139,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
                 color="#686868"
               >
                 وزن آرماتور طراحی اولیه برای تیر، ستون، فونداسیون و سقف :{" "}
-                {data.weightArmature1} کیلوگرم برای هر متر مربع
+                {data.weightArmature1} - کیلوگرم برای هر متر مربع
               </Typography>
             )}
             {data.weightArmature2 !== null && (
@@ -149,8 +149,9 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
                 sx={{ margin: "10px 0px" }}
                 color="#686868"
               >
+                
                 {" "}
-                وزن آرماتور پس از باز طراحی توسط تیم خانه بتنی برای تیر، ستون،
+                وزن  آرماتور پس از باز طراحی توسط تیم خانه بتنی برای تیر، ستون،
                 فونداسیون و سقف : {data.weightArmature2} کیلوگرم برای هر متر
                 مربع
               </Typography>
