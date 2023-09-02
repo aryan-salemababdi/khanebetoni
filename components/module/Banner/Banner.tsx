@@ -20,7 +20,7 @@ const Banner = () => {
   };
 
   const mystyle = {
-    backgroundImage: `url(images/image${arrayImage[backgroundImageIndex]}.png)`,
+    backgroundImage: `url(/images/image${arrayImage[backgroundImageIndex]}.png)`,
     margin: "0px",
     height: "100vh",
     width: "100vw",
