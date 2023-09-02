@@ -146,16 +146,6 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         >
                           <MenuItem onClick={handleClose}>
                             <Typography fontWeight="bold" variant="h6">
-                              درباره ما
-                            </Typography>
-                          </MenuItem>
-                        </Link>
-                        <Link
-                          href="/"
-                          style={{ textDecoration: "none", color: "black" }}
-                        >
-                          <MenuItem onClick={handleClose}>
-                            <Typography fontWeight="bold" variant="h6">
                               تماس با ما
                             </Typography>
                           </MenuItem>
@@ -190,24 +180,6 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                     item
                     sx={{ display: { md: "block", sm: "none", xs: "none" } }}
                   >
-                    <ListItem>
-                      <Link
-                        href="/"
-                        style={{ textDecoration: "none", color: "#ffffff" }}
-                      >
-                        <Typography
-                          fontWeight="bold"
-                          variant="h6"
-                          color={
-                            scroll > 30 || currentPath !== "/"
-                              ? "black"
-                              : "white"
-                          }
-                        >
-                          درباره ما
-                        </Typography>
-                      </Link>
-                    </ListItem>
                   </Grid>
                   <Grid
                     item
