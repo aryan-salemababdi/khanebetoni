@@ -1,9 +1,5 @@
 "use client";
-import {
-  Box,
-  Container,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -45,44 +41,44 @@ const LevelStart = () => {
           <Slider {...settings}>
             <div>
               <LevelCards
-                img = "/images/step1.png"
-                title = "مرحله اول"
-                desc = "دریافت نقشه و فایل های اولیه سازه از کارفرما برای بررسی های اولیه"
+                img="/images/step1.png"
+                title="مرحله اول"
+                desc="دریافت نقشه و فایل های اولیه سازه از کارفرما برای بررسی های اولیه"
               />
             </div>
             <div>
               <LevelCards
-                img = "/images/step2.png"
-                title = "مرحله دوم"
-                desc = "بررسی فایل های اولیه سازه و بررسی امکان بهینه بتن، تیرچه و آرماتور"
+                img="/images/step2.png"
+                title="مرحله دوم"
+                desc="بررسی فایل های اولیه سازه و بررسی امکان بهینه بتن، تیرچه و آرماتور"
               />
             </div>
             <div>
               <LevelCards
-                img = "/images/step3.png"
-                title = "مرحله سوم"
-                desc = "ارائه حدود میزان بهینگی سازه و همچنین دستمزد اجرا به کارفرما"
+                img="/images/step3.png"
+                title="مرحله سوم"
+                desc="ارائه حدود میزان بهینگی سازه و همچنین دستمزد اجرا به کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img = "/images/step4.png"
-                title = "مرحله چهارم"
-                desc = "ارائه برنامه زمانبندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
+                img="/images/step4.png"
+                title="مرحله چهارم"
+                desc="ارائه برنامه زمانبندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
               />
             </div>
             <div>
               <LevelCards
-                img = "/images/step5.png"
-                title = "مرحله پنجم"
-                desc = "انجام بهینگی سازه و ارائه نقشه اجرایی جدید به صورت رایگان و گرفتن تایید در صورت تمایل کارفرما"
+                img="/images/step5.png"
+                title="مرحله پنجم"
+                desc="انجام بهینگی سازه و ارائه نقشه اجرایی جدید به صورت رایگان و گرفتن تایید در صورت تمایل کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img = "/images/step6.jpg"
-                title = "مرحله ششم"
-                desc = "عقد قرارداد،انجام خرید بخش اول مصالح سازه ( درصورت تمایل کارفرما ) و اجرای پروژه"
+                img="/images/step6.jpg"
+                title="مرحله ششم"
+                desc="عقد قرارداد،انجام خرید بخش اول مصالح سازه ( درصورت تمایل کارفرما ) و اجرای پروژه"
               />
             </div>
           </Slider>
