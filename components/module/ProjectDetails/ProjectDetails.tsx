@@ -139,7 +139,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
                 color="#686868"
               >
                 وزن آرماتور طراحی اولیه برای تیر، ستون، فونداسیون و سقف :{" "}
-                {data.weightArmature1} - کیلوگرم برای هر متر مربع
+                {data.weightArmature1} کیلوگرم برای هر متر مربع
               </Typography>
             )}
             {data.weightArmature2 !== null && (
