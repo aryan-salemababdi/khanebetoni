@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import { Typography, Box, Button } from "@mui/material";
-import Image from "next/image";
+import { Typography, Box, Button, Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { NextPage } from "next";
 
 interface IOurWorks {
@@ -44,32 +43,68 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
       >
         پروژه های خانه بتن
       </Typography>
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            md: "repeat(3,auto)",
-            sm: "repeat(3,auto)",
-            xs: "repeat(1,auto)",
-          },
-          justifyContent: "center",
+      <Grid
+        container
+        display="grid"
+        gridAutoColumns="auto"
+        gridTemplateColumns={{
+          md: "repeat(3,1fr)",
+          xs: "repeat(1,1fr)",
         }}
+        p={2}
       >
-        {data.slice(0, 3).map((item: any) => (
-          <Box m="0px 10px" key={item.id}>
-            <Button onClick={() => router.push(`/project/${item.id}`)}>
-              <Image
-                src={item.featuredImage}
-                alt={item.title}
-                width={300}
-                height={300}
-                layout="responsive"
-                style={{ borderRadius: "10px" }}
+        {data.map((item: any) => (
+          <Grid m={1} item key={item.id}>
+            <Card>
+              <CardMedia
+                sx={{ height: 200 }}
+                image={item.featuredImage}
+                title={item.title}
               />
-            </Button>
-          </Box>
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="div"
+                  textAlign="right"
+                >
+                  {item.title}
+                </Typography>
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="div"
+                  textAlign="right"
+                >
+                  {item.master}
+                </Typography>
+                <Typography
+                  gutterBottom
+                  variant="body1"
+                  component="div"
+                  textAlign="right"
+                >
+                 وضعیت پروژه : {item.endTime}
+                </Typography>
+                <Button
+                  size="small"
+                  onClick={() => {
+                    router.push(`/project/${item.id}`);
+                  }}
+                >
+                  <Typography
+                    variant="h6"
+                    fontWeight="bold"
+                    sx={{ whiteSpace: "pre-wrap" }}
+                  >
+                    مشاهده جزئیات
+                  </Typography>
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </Box>
+      </Grid>
       <Box display="flex" justifyContent="center">
         <Button
           variant="outlined"
