@@ -8,23 +8,38 @@ import LevelCards from "./LevelCards";
 
 const LevelStart = () => {
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
+    dots: true,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 3,
-    centerMode: true,
+    useTransform:false,
+    autoplay: false,
+    arrows: false,
+    initialSlide: 0,
+    cssEase: 'linear',
+    rtl: false,
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+        {
+            breakpoint: 1024, // width to change options
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+            }
         },
-      },
-    ],
-  };
-
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll:1,
+                initialSlide: 1,
+                infinite: true,
+                centerMode:false,
+            }
+        }
+    ]
+};
   return (
     <Box m="100px 0px">
       <Typography
