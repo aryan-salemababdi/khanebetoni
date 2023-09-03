@@ -12,6 +12,17 @@ const Banner = () => {
   
   const arrayImage = [1, 2];
 
+  function updateBackgroundImage() {
+    backgroundImageIndex > 0
+      ? setBackgroundImageIndex(0)
+      : setBackgroundImageIndex(backgroundImageIndex + 1);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(updateBackgroundImage, 4000);
+    return () => clearInterval(interval);
+  });
+
   const scroller = (value: number) => {
     window.scrollTo({
       top: value,
