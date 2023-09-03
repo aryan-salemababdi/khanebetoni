@@ -78,14 +78,6 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
                 >
                   {item.master}
                 </Typography>
-                <Typography
-                  gutterBottom
-                  variant="body1"
-                  component="div"
-                  textAlign="right"
-                >
-                 وضعیت پروژه : {item.endTime}
-                </Typography>
                 <Button
                   size="small"
                   onClick={() => {
