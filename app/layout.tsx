@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Khane Betoni",
-  description: "concreate resume app",
+  description: "Reinforced Concrete Resume",
+  icons: { icon: "./icon-192x192.png" }
 };
 
 export default function RootLayout({
