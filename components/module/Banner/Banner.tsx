@@ -2,8 +2,8 @@
 import { useState, useEffect } from "react";
 import { Typography, Button, Box } from "@mui/material";
 import { useRouter as useNextRouter } from "next/navigation";
-
 type Router = ReturnType<typeof useNextRouter>;
+
 
 const Banner = () => {
   const router: Router = useNextRouter();

@@ -141,7 +141,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                           style={{ textDecoration: "none", color: "black" }}
                         ></Link>
                         <Link
-                          href="/"
+                          href="/contactus"
                           style={{ textDecoration: "none", color: "black" }}
                         >
                           <MenuItem onClick={handleClose}>
@@ -159,7 +159,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                   >
                     <ListItem>
                       <Link
-                        href="/"
+                        href="/contactus"
                         style={{ textDecoration: "none", color: "#ffffff" }}
                       >
                         <Typography
