@@ -16,7 +16,7 @@ const LevelCards:NextPage<ILevelCards> = ({
 }) => {
   return (
     <div>
-      <Card sx={{ maxWidth: 345, height:345,margin:{md:"0px 5px", sm:"0px 5px", xs:"0px 50px"} }}>
+      <Card sx={{ maxWidth: 360, height:360,margin:{md:"0px 5px", sm:"0px 5px", xs:"0px 50px"} }}>
         <CardMedia
           sx={{ height: 180 }}
           image={img}
