@@ -77,56 +77,56 @@ const LevelStart = () => {
           <Slider {...settings}>
             <div>
               <LevelCards
-                img="/images/step1.png"
+                img="/images/step1.webp"
                 title="مرحله اول"
                 desc="دریافت نقشه و فایل های اولیه سازه از کارفرما برای بررسی های اولیه"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step2.png"
+                img="/images/step2.webp"
                 title="مرحله دوم"
                 desc="بررسی فایل های اولیه سازه و بررسی امکان بهینه کردن مصرف بتن، تیرچه و آرماتور"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step3.png"
+                img="/images/step3.webp"
                 title="مرحله سوم"
                 desc="ارائه حدود میزان بهینگی سازه و همچنین دستمزد اجرا به کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step4.png"
+                img="/images/step4.webp"
                 title="مرحله چهارم"
                 desc="ارائه برنامه زمانبندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step5.png"
+                img="/images/step5.webp"
                 title="مرحله پنجم"
                 desc="انجام بهینگی سازه وارائه نقشه اجرایی جدید(به صورت رایگان) و گرفتن تایید از محاسب قبلی ( در صورت تمایل کارفرما و تایید محاسب قبلی )"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step6.jpg"
+                img="/images/step6.webp"
                 title="مرحله ششم"
                 desc="عقد قرارداد"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step7.png"
+                img="/images/step7.webp"
                 title="مرحله هفتم"
                 desc="انجام خرید بخش اول مصالح سازه ( در صورت تمایل کارفرما )"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step8.jpg"
+                img="/images/step8.webp"
                 title="مرحله هشتم"
                 desc="شروع اجرا"
               />
@@ -147,63 +147,63 @@ const LevelStart = () => {
           <Slider {...settings}>
             <div>
               <LevelCards
-                img="/images/step7.png"
+                img="/images/step7.webp"
                 title="مرحله اول"
                 desc="دریافت نقشه های معماری از کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step12.jpg"
+                img="/images/step12.webp"
                 title="مرحله دوم"
                 desc="ارائه مشاوره های فنی در خصوص انتخاب سیستم باربرجانبی، نوع سقف، نوع مصالح دیوار و ... به کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step13.jpg"
+                img="/images/step13.webp"
                 title="مرحله سوم"
                 desc="انجام طراحی اولیه و ارائه حدود وزنی آرماتور و حدود حجمی بتن به کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step4.png"
+                img="/images/step4.webp"
                 title="مرحله چهارم"
                 desc= "ارائه نقشه های اجرایی و مدارک محاسبات سازه به کارفرما ( سه هفته پس از گرفتن نقشه های معماری )، جهت گرفتن برگه محاسبات و گرفتن جواز"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step5.png"
+                img="/images/step5.webp"
                 title="مرحله پنجم"
                 desc="انجام طراحی بهینه سازه ( به صورت رایگان ) با در نظر گرفتن منافع کارفرما"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step6.jpg"
+                img="/images/step6.webp"
                 title="مرحله ششم"
                 desc="عقد قرارداد"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step17.jpg"
+                img="/images/step17.webp"
                 title="مرحله هفتم"
                 desc="ارائه برنامه زمان بندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step18.jpg"
+                img="/images/step18.webp"
                 title="مرحله هشتم"
                 desc="انجام خرید بخش اول مصالح سازه ( در صورت تمایل کارفرما ) "
               />
             </div>
             <div>
               <LevelCards
-                img="/images/step8.jpg"
+                img="/images/step8.webp"
                 title="مرحله نهم"
                 desc="شروع اجرا پس از محیا شدن شرایط اجرا سازه توسط کارفرما"
               />

@@ -141,7 +141,7 @@ const WorkWithUs = () => {
             justifyContent="center"
           >
             <Image
-              src="/images/workwithus.png"
+              src="/images/workwithus.webp"
               alt="aboutus"
               layout="responsive"
               width={400}

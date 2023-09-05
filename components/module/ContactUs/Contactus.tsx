@@ -8,7 +8,7 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Contactus = () => {
   const mystyle = {
-    backgroundImage: `url(images/bg-contactus.jpg)`,
+    backgroundImage: `url(images/bg-contactus.webp)`,
     margin: "55px 0px",
     height: "50vh",
     width: "100vw",
