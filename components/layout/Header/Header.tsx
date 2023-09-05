@@ -82,11 +82,11 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid item p={1}>
               <Image
-                src="/images/logo/2.jpg"
+                src="/images/logo/12.jpg"
                 alt="logo"
                 width={70}
                 height={70}
-                style={{ borderRadius: "50%" }}
+                style={{ borderRadius: "5%" }}
               />
             </Grid>
             <Grid item>
@@ -146,7 +146,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                         >
                           <MenuItem onClick={handleClose}>
                             <Typography fontWeight="bold" variant="h6">
-                              تماس با ما
+                              ارتباط با ما
                             </Typography>
                           </MenuItem>
                         </Link>
@@ -171,7 +171,7 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
                               : "white"
                           }
                         >
-                          تماس با ما
+                         ارتباط با ما
                         </Typography>
                       </Link>
                     </ListItem>

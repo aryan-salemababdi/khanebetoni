@@ -15,13 +15,19 @@ const WorkWithUs = () => {
             sx={{
               flexDirection: "column",
               textAlign: { md: "right", sm: "right", xs: "right" },
+              direction: "rtl",
             }}
           >
             <Typography color="#EA6B00" fontWeight="bold" variant="h6">
               مزایای همکاری با ما
             </Typography>
-            <Typography fontWeight="bold" variant="h3">
-              شما می توانید با ما همکاری کنید
+            <Typography
+              fontWeight="bold"
+              variant="body2"
+              sx={{ margin: "10px 0px" }}
+              color="#686868"
+            >
+              1- حضور یک مهندس عمران و متخصص سازه و مسلط به قوانین نظارت
             </Typography>
             <Typography
               fontWeight="bold"
@@ -29,7 +35,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              حضور یک مهندس عمران و متخصص سازه و مسلط به قوانین نظارت 
+              2- بررسی محاسباتی سازه اولیه و بهینه کردن مصرف میلگرد، بتن، تیرچه
+              و ... در صورت امکان
             </Typography>
             <Typography
               fontWeight="bold"
@@ -37,8 +44,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              بررسی محاسباتی سازه اولیه و بهینه کردن مصرف میلگرد، بتن، تیرچه و
-              ... در صورت امکان 
+           3- ارائه مشاوره های فنی و مهندسی به کارفرما، جهت کاهش هزینه ها و
+              بهینه شدن سازه
             </Typography>
             <Typography
               fontWeight="bold"
@@ -46,8 +53,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              ارائه مشاوره های فنی و مهندسی به کارفرما، جهت کاهش هزینه ها و
-              بهینه شدن سازه 
+             4- تکیه بر دانش فنی و علم سازه ای مهندسین عمران فارغ التحصیل گرایش
+              سازه از بهترین دانشگاه های مطرح کشور
             </Typography>
             <Typography
               fontWeight="bold"
@@ -55,8 +62,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              تکیه بر دانش فنی و علم سازه ای مهندسین عمران فارغ التحصیل گرایش
-              سازه از بهترین دانشگاه های مطرح کشور 
+              5- اجرای اصولی و مهندسی سازه
             </Typography>
             <Typography
               fontWeight="bold"
@@ -64,7 +70,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              اجرای اصولی و مهندسی سازه 
+             6- داشتن پرسنل اجرایی با تجربه
             </Typography>
             <Typography
               fontWeight="bold"
@@ -72,7 +78,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              داشتن پرسنل اجرایی با تجربه 
+            7-  کنترل ترکیبات افزودنی لازم برای بتن و همچنین کنترل کیفیت مصالح به
+              روش مهندسی
             </Typography>
             <Typography
               fontWeight="bold"
@@ -80,8 +87,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              کنترل ترکیبات افزودنی لازم برای بتن و همچنین کنترل کیفیت مصالح به
-              روش مهندسی 
+              8- تعامل با مهندس ناظر معرفی شده از سوی سازمان نظام مهندسی
             </Typography>
             <Typography
               fontWeight="bold"
@@ -89,7 +95,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              تعامل با مهندس ناظر معرفی شده از سوی سازمان نظام مهندسی 
+            9-  مدیریت تامین مصالحی نظیر بتن، میلگرد، تیرچه و یونولیت با مناسب
+              ترین قیمت و بهترین کیفیت
             </Typography>
             <Typography
               fontWeight="bold"
@@ -97,8 +104,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              مدیریت تامین مصالحی نظیر بتن، میلگرد، تیرچه و یونولیت با مناسب
-              ترین قیمت و بهترین کیفیت 
+              10- مدیریت زمان ساخت سازه
             </Typography>
             <Typography
               fontWeight="bold"
@@ -106,7 +112,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              مدیریت زمان ساخت سازه 
+             11- انجام آزمایش های بتن و میلگرد و ارائه برگ آزمایش
             </Typography>
             <Typography
               fontWeight="bold"
@@ -114,7 +120,7 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              انجام آزمایش های بتن و میلگرد و ارائه برگ آزمایش 
+              12- انجام فورجینگ در مواردی که انجام آن منجر به بهینگی سازه می شود
             </Typography>
             <Typography
               fontWeight="bold"
@@ -122,16 +128,8 @@ const WorkWithUs = () => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              انجام فورجینگ در مواردی که انجام آن منجر به بهینگی سازه می شود 
-            </Typography>
-            <Typography
-              fontWeight="bold"
-              variant="body2"
-              sx={{ margin: "10px 0px" }}
-              color="#686868"
-            >
-              فراغت کارفرماازاجرای سازه (کارفرما، پروژه را پس از گودبرداری تحویل
-              می دهد و پس از اتمام اسکلت تحویل می گیرد) 
+             13- فراغت کارفرماازاجرای سازه (کارفرما، پروژه را پس از گودبرداری تحویل
+              می دهد و پس از اتمام اسکلت تحویل می گیرد)
             </Typography>
           </Grid>
           <Grid

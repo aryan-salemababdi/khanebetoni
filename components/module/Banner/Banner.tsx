@@ -4,12 +4,11 @@ import { Typography, Button, Box } from "@mui/material";
 import { useRouter as useNextRouter } from "next/navigation";
 type Router = ReturnType<typeof useNextRouter>;
 
-
 const Banner = () => {
   const router: Router = useNextRouter();
 
   const [backgroundImageIndex, setBackgroundImageIndex] = useState<number>(0);
-  
+
   const arrayImage = [1, 2];
 
   function updateBackgroundImage() {
@@ -67,16 +66,6 @@ const Banner = () => {
         >
           بهینه، مهندسی بساز
         </Typography>
-        <Typography
-          fontWeight="bold"
-          variant="h6"
-          textAlign="center"
-          mt={1}
-          mx={1}
-        >
-          با افتخار، پیشرو در ارائه محصولات بتن آرمه با کیفیت برای ساخت آینده
-          بهتر و پایدار
-        </Typography>
         <Box
           sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
         >
@@ -85,7 +74,7 @@ const Banner = () => {
             color="warning"
             sx={{ margin: "10px 10px" }}
             onClick={() => {
-              scroller(2988);
+              scroller(2040);
             }}
           >
             <Typography
@@ -94,41 +83,7 @@ const Banner = () => {
               textAlign="right"
               color="white"
             >
-              پروژه های ما
-            </Typography>
-          </Button>
-          <Button
-            variant="contained"
-            color="warning"
-            sx={{ margin: "10px 10px" }}
-            onClick={() => {
-              scroller(650);
-            }}
-          >
-            <Typography
-              fontWeight="bold"
-              variant="h6"
-              textAlign="right"
-              color="white"
-            >
-              بیانیه ماموریت
-            </Typography>
-          </Button>
-          <Button
-            variant="contained"
-            color="warning"
-            sx={{ margin: "10px 10px" }}
-            onClick={() => {
-              scroller(4546);
-            }}
-          >
-            <Typography
-              fontWeight="bold"
-              variant="h6"
-              textAlign="right"
-              color="white"
-            >
-              ارتباط با ما
+              مزایای همکاری
             </Typography>
           </Button>
           <Button
@@ -153,7 +108,7 @@ const Banner = () => {
             color="warning"
             sx={{ margin: "10px 10px" }}
             onClick={() => {
-              scroller(2040);
+              scroller(650);
             }}
           >
             <Typography
@@ -162,7 +117,41 @@ const Banner = () => {
               textAlign="right"
               color="white"
             >
-              مزایای همکاری
+              درباره ما
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(5546);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              ارتباط با ما
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(2988);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              پروژه های ما
             </Typography>
           </Button>
         </Box>
