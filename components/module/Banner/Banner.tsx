@@ -69,23 +69,7 @@ const Banner = () => {
         <Box
           sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
         >
-          <Button
-            variant="contained"
-            color="warning"
-            sx={{ margin: "10px 10px" }}
-            onClick={() => {
-              scroller(2040);
-            }}
-          >
-            <Typography
-              fontWeight="bold"
-              variant="h6"
-              textAlign="right"
-              color="white"
-            >
-              مزایای همکاری
-            </Typography>
-          </Button>
+          
           <Button
             variant="contained"
             color="warning"
@@ -125,23 +109,6 @@ const Banner = () => {
             color="warning"
             sx={{ margin: "10px 10px" }}
             onClick={() => {
-              scroller(5546);
-            }}
-          >
-            <Typography
-              fontWeight="bold"
-              variant="h6"
-              textAlign="right"
-              color="white"
-            >
-              ارتباط با ما
-            </Typography>
-          </Button>
-          <Button
-            variant="contained"
-            color="warning"
-            sx={{ margin: "10px 10px" }}
-            onClick={() => {
               scroller(2988);
             }}
           >
@@ -152,6 +119,40 @@ const Banner = () => {
               color="white"
             >
               پروژه های ما
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(2040);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              مزایای همکاری
+            </Typography>
+          </Button>
+          <Button
+            variant="contained"
+            color="warning"
+            sx={{ margin: "10px 10px" }}
+            onClick={() => {
+              scroller(5546);
+            }}
+          >
+            <Typography
+              fontWeight="bold"
+              variant="h6"
+              textAlign="right"
+              color="white"
+            >
+              ارتباط با ما
             </Typography>
           </Button>
         </Box>
