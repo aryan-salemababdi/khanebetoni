@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "خانه بتنی",
   description: "شرکت مهندسی خانه بتنی",
-  icons: { icon: "./icon-384x384.png" }
+  icons: { icon: "./icon-512x512.png" }
 };
 
 export default function RootLayout({
