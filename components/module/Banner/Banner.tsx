@@ -52,6 +52,7 @@ const Banner = () => {
           fontWeight="bold"
           variant="h4"
           textAlign="center"
+          color="black"
           mt={1}
           mx={1}
         >
@@ -61,15 +62,19 @@ const Banner = () => {
           fontWeight="bold"
           variant="h4"
           textAlign="center"
+          color="black"
           mt={1}
           mx={1}
         >
           بهینه، مهندسی بساز
         </Typography>
         <Box
-          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+          sx={{
+            display: "grid",
+            justifyContent: "center",
+            gridTemplateColumns: "repeat(2,2fr)",
+          }}
         >
-          
           <Button
             variant="contained"
             color="warning"
@@ -81,10 +86,10 @@ const Banner = () => {
             <Typography
               fontWeight="bold"
               variant="h6"
-              textAlign="right"
+              textAlign="center"
               color="white"
             >
-              مراحل اجرا
+              مراحل پیش از شروع اجرا
             </Typography>
           </Button>
           <Button
@@ -98,7 +103,7 @@ const Banner = () => {
             <Typography
               fontWeight="bold"
               variant="h6"
-              textAlign="right"
+              textAlign="center"
               color="white"
             >
               درباره ما
@@ -115,7 +120,7 @@ const Banner = () => {
             <Typography
               fontWeight="bold"
               variant="h6"
-              textAlign="right"
+              textAlign="center"
               color="white"
             >
               پروژه های ما
@@ -132,12 +137,13 @@ const Banner = () => {
             <Typography
               fontWeight="bold"
               variant="h6"
-              textAlign="right"
+              textAlign="center"
               color="white"
             >
               مزایای همکاری
             </Typography>
           </Button>
+          <div></div>
           <Button
             variant="contained"
             color="warning"
@@ -149,7 +155,7 @@ const Banner = () => {
             <Typography
               fontWeight="bold"
               variant="h6"
-              textAlign="right"
+              textAlign="center"
               color="white"
             >
               ارتباط با ما

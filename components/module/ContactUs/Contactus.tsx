@@ -1,10 +1,10 @@
-import React from "react";
+import Link from "next/link";
 import { Box, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StayPrimaryPortraitIcon from "@mui/icons-material/StayPrimaryPortrait";
-import Link from "next/link";
-import "./Contactus.css";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from '@mui/icons-material/Email';
+import "./Contactus.css";
 
 const Contactus = () => {
   const mystyle = {
@@ -52,6 +52,10 @@ const Contactus = () => {
             09016442595
           </div>
           <StayPrimaryPortraitIcon sx={{ fontSize: "50px" }} />
+        </Box>
+        <Box className="contact-link">
+          <div className="contact-tooltip-email">khanebetoni@gmail.com</div>
+          <EmailIcon sx={{ fontSize: "50px" }} />
         </Box>
         <Box className="contact-link">
           <div className="contact-tooltip-telephone">02177487165</div>

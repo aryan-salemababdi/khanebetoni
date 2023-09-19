@@ -29,7 +29,7 @@
     padding: 5px;
     position: absolute;
     bottom: -35px;
-    left: 50%;
+    left: 75%;
     transform: translateX(-50%);
     border-radius: 5px;
   }
@@ -40,7 +40,18 @@
     padding: 5px;
     position: absolute;
     bottom: -35px;
+    left: 20%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  .contact-tooltip-email{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    position: absolute;
     left: 50%;
+    bottom: -40px;
     transform: translateX(-50%);
     border-radius: 5px;
   }
@@ -52,6 +63,9 @@
     display: block;
   }
   .contact-link:hover .contact-tooltip-telephone {
+    display: block;
+  }
+  .contact-link:hover .contact-tooltip-email {
     display: block;
   }
   

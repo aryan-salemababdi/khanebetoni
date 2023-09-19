@@ -98,9 +98,9 @@ const LevelStart = () => {
             </div>
             <div>
               <LevelCards
-                img="/images/step4.webp"
+                img="/images/step6.webp"
                 title="مرحله چهارم"
-                desc="ارائه برنامه زمانبندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
+                desc="عقد قرارداد"
               />
             </div>
             <div>
@@ -112,9 +112,9 @@ const LevelStart = () => {
             </div>
             <div>
               <LevelCards
-                img="/images/step6.webp"
+                img="/images/step4.webp"
                 title="مرحله ششم"
-                desc="عقد قرارداد"
+                desc="ارائه برنامه زمانبندی اجرا و همچنین لیست کامل تمام مصالح مورد نیاز سازه به تفکیک طبقات"
               />
             </div>
             <div>
@@ -168,9 +168,9 @@ const LevelStart = () => {
             </div>
             <div>
               <LevelCards
-                img="/images/step4.webp"
+                img="/images/step6.webp"
                 title="مرحله چهارم"
-                desc= "ارائه نقشه های اجرایی و مدارک محاسبات سازه به کارفرما ( سه هفته پس از گرفتن نقشه های معماری )، جهت گرفتن برگه محاسبات و گرفتن جواز"
+                desc="عقد قرارداد"
               />
             </div>
             <div>
@@ -182,9 +182,9 @@ const LevelStart = () => {
             </div>
             <div>
               <LevelCards
-                img="/images/step6.webp"
+                img="/images/step4.webp"
                 title="مرحله ششم"
-                desc="عقد قرارداد"
+                desc="ارائه نقشه های اجرایی و مدارک محاسبات سازه به کارفرما ( سه هفته پس از گرفتن نقشه های معماری )، جهت گرفتن برگه محاسبات و گرفتن جواز"
               />
             </div>
             <div>
@@ -208,7 +208,6 @@ const LevelStart = () => {
                 desc="شروع اجرا پس از محیا شدن شرایط اجرا سازه توسط کارفرما"
               />
             </div>
-
           </Slider>
         </Box>
       </Container>

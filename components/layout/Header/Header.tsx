@@ -82,11 +82,11 @@ const Header: NextPage<HeaderProps> = ({ children }) => {
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid item p={1}>
               <Image
-                src="/images/logo/12.jpg"
+                src="/images/logo/12.png"
                 alt="logo"
-                width={70}
-                height={70}
-                style={{ borderRadius: "5%" }}
+                width={90}
+                height={90}
+                style={{ borderRadius: "5%",backgroundColor:"none" }}
               />
             </Grid>
             <Grid item>
