@@ -166,28 +166,49 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
             )}
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
-            <Slider {...settings}>
-              <div>
-                <Image
-                  src={data.featuredImage}
-                  alt={data.title}
-                  width={200}
-                  height={200}
-                  style={{ borderRadius: "10px", margin: "0px 50px" }}
-                />
-              </div>
-              {data.allImages.map((image, index) => (
-                <div key={index}>
+            {
+              data.allImages.length !== 0 ? (
+                <Slider {...settings}>
+                <div>
                   <Image
-                    src={image}
-                    alt={`Image ${index + 1}`}
+                    src={data.featuredImage}
+                    alt={data.title}
                     width={200}
                     height={200}
                     style={{ borderRadius: "10px", margin: "0px 50px" }}
                   />
                 </div>
-              ))}
-            </Slider>
+                {data.allImages.map((image, index) => (
+                  <div key={index}>
+                    <Image
+                      src={image}
+                      alt={`Image ${index + 1}`}
+                      width={200}
+                      height={200}
+                      style={{ borderRadius: "10px", margin: "0px 50px" }}
+                    />
+                  </div>
+                ))}
+              </Slider>
+              )
+              :
+              <Grid
+              item
+              xs={12}
+              sm={12}
+              md={12}
+              display="flex"
+              justifyContent="center"
+            >
+                  <Image
+                    src={data.featuredImage}
+                    alt={data.title}
+                    width={200}
+                    height={200}
+                    style={{ borderRadius: "10px"}}
+                  />
+            </Grid>
+            }
           </Grid>
         </Grid>
       </Container>
