@@ -15,12 +15,14 @@ interface IProject {
     id: number;
     title: string;
     master: string;
+    services: string | null;
     startTime: string;
     endTime: string;
     featuredImage: string;
     allImages: string[];
     area: number;
     roof: number;
+    cheangeRoof:boolean;
     typeRoof: string;
     sidewaysBarSystem: string;
     weightArmature1: number | null;

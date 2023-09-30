@@ -11,12 +11,14 @@ interface IProjectDetails {
     id: number;
     title: string;
     master: string;
+    services: string | null;
     startTime: string;
     featuredImage: string;
     allImages: string[];
     area: number;
     roof: number;
     typeRoof: string;
+    cheangeRoof: boolean;
     sidewaysBarSystem: string;
     weightArmature1: number | null;
     weightArmature2: number | null;
@@ -30,35 +32,35 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
     speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 2,
-    useTransform:false,
+    useTransform: false,
     autoplay: false,
     arrows: false,
     initialSlide: 0,
     cssEase: 'linear',
     rtl: true,
     responsive: [
-        {
-            breakpoint: 1024, // width to change options
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll:1,
-                initialSlide: 1,
-                infinite: true,
-                centerMode:false,
-            }
+      {
+        breakpoint: 1024, // width to change options
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
         }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+          centerMode: false,
+        }
+      }
     ]
-};
+  };
   return (
-    <Box m="100px 0px">
+    <Box m="150px 0px">
       <Container>
         <Grid container justifyContent="center" spacing={3}>
           <Grid
@@ -83,37 +85,27 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              کارفرما : {data.master} 
+              کارفرما : {data.master}
             </Typography>
-            <Typography
-              fontWeight="bold"
-              variant="h6"
-              sx={{ margin: "10px 0px" }}
-              color="#686868"
-            ></Typography>
+            {
+              data.services !== null && (
+                <Typography
+                  fontWeight="bold"
+                  variant="h6"
+                  sx={{ margin: "10px 0px" }}
+                  color="#686868"
+                >
+                  خدمات خانه بتنی : {data.services}
+                </Typography>
+              )
+            }
             <Typography
               fontWeight="bold"
               variant="body2"
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              تاریخ شروع پروژه : {data.startTime} 
-            </Typography>
-            <Typography
-              fontWeight="bold"
-              variant="body2"
-              sx={{ margin: "10px 0px" }}
-              color="#686868"
-            >
-              مساحت : {data.area} متر مربع 
-            </Typography>
-            <Typography
-              fontWeight="bold"
-              variant="body2"
-              sx={{ margin: "10px 0px" }}
-              color="#686868"
-            >
-              تعداد سقف : {data.roof} سقف 
+              تاریخ شروع پروژه : {data.startTime}
             </Typography>
             <Typography
               fontWeight="bold"
@@ -121,7 +113,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              نوع سقف : {data.typeRoof} 
+              مساحت : {data.area} متر مربع
             </Typography>
             <Typography
               fontWeight="bold"
@@ -129,7 +121,23 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
               sx={{ margin: "10px 0px" }}
               color="#686868"
             >
-              سیستم باربر جانبی : {data.sidewaysBarSystem} 
+              تعداد سقف : {data.roof} سقف
+            </Typography>
+            <Typography
+              fontWeight="bold"
+              variant="body2"
+              sx={{ margin: "10px 0px" }}
+              color="#686868"
+            >
+              نوع سقف : {data.typeRoof}
+            </Typography>
+            <Typography
+              fontWeight="bold"
+              variant="body2"
+              sx={{ margin: "10px 0px" }}
+              color="#686868"
+            >
+              سیستم باربر جانبی : {data.sidewaysBarSystem}
             </Typography>
             {data.weightArmature1 !== null && (
               <Typography
@@ -149,7 +157,7 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
                 sx={{ margin: "10px 0px" }}
                 color="#686868"
               >
-                
+
                 {" "}
                 وزن  آرماتور پس از باز طراحی توسط تیم خانه بتنی برای تیر، ستون،
                 فونداسیون و سقف : {data.weightArmature2} کیلوگرم برای هر متر
@@ -165,20 +173,20 @@ const ProjectDetails: NextPage<IProjectDetails> = ({ data }) => {
                   alt={data.title}
                   width={200}
                   height={200}
-                  style={{borderRadius:"10px", margin:"0px 50px"}}
+                  style={{ borderRadius: "10px", margin: "0px 50px" }}
                 />
               </div>
-                {data.allImages.map((image, index) => (
-                  <div key={index}>
-                    <Image
-                      src={image}
-                      alt={`Image ${index + 1}`}
-                      width={200}
-                      height={200}
-                      style={{borderRadius:"10px", margin:"0px 50px"}}
-                    />
-                  </div>
-                ))}
+              {data.allImages.map((image, index) => (
+                <div key={index}>
+                  <Image
+                    src={image}
+                    alt={`Image ${index + 1}`}
+                    width={200}
+                    height={200}
+                    style={{ borderRadius: "10px", margin: "0px 50px" }}
+                  />
+                </div>
+              ))}
             </Slider>
           </Grid>
         </Grid>

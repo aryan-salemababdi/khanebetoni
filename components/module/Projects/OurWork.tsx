@@ -4,7 +4,7 @@ import OurWorks from './OurWorks'
 const OurWork = async () => {
 
     const res = await fetch("https://khanebetoni-api.vercel.app/projects", {
-      cache: "force-cache",
+      cache: "no-cache",
     });
   
     const data = await res.json();

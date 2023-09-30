@@ -53,7 +53,7 @@ const OurWorks: NextPage<IOurWorks> = ({ data }) => {
         }}
         p={2}
       >
-        {data.map((item: any) => (
+        {data.slice(data.length-4, data.length-1).map((item: any) => (
           <Grid m={1} item key={item.id}>
             <Card>
               <CardMedia
