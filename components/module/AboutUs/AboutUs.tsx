@@ -64,7 +64,7 @@ const AboutUs = () => {
             display="flex"
             justifyContent="center"
           >
-            <Image
+           <Image
               src="/images/aboutus.png"
               alt="aboutus"
               layout="responsive"
