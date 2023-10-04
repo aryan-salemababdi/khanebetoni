@@ -2,7 +2,7 @@ import ProjectsPage from '@/components/template/ProjectsPage/ProjectsPage'
 
 
 const Projects = async () => {
-    const res = await fetch("https://khanebetoni-api.vercel.app/projects",{
+    const res = await fetch("https://khanebetoni-api.iran.liara.run/projects",{
         cache: "no-cache",
     })
     const data = await res.json();

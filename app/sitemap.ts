@@ -1,6 +1,6 @@
 export default async function sitemap() {
     const staticRoutes = ["", "/project", "/contactus"];
-    const projectRoutes = await fetch("https://khanebetoni-api.vercel.app/projects");
+    const projectRoutes = await fetch("https://khanebetoni-api.iran.liara.run/projects");
     const data = await projectRoutes.json();
 
     const routes = staticRoutes.map((route:any) => ({
