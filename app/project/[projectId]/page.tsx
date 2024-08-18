@@ -7,7 +7,7 @@ type UserIdParams = {
 };
 
 const ProjectId: NextPage<UserIdParams> = async ({ params }) => {
-  const res = await fetch("https://khanebetoni-api.iran.liara.run/projects", {
+  const res = await fetch("https://khanebetoni-api-omega.vercel.app/projects", {
     cache: "no-cache",
   });
 
